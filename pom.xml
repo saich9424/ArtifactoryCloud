@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>SampleRestApplication</groupId>
   <artifactId>SampleRestApplication</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
        <dependency>
@@ -33,17 +33,17 @@
     <repository>
       <id>nexus</id>
       <name>Nexus Releases</name>
-      <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2</url>
+      <url>http://52.14.40.69:8081/nexus/service/local/staging/deploy/maven2</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Nexus Snapshot</name>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+      <url>http://52.14.40.69:80811/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
     <site>
       <id>nexus</id>
       <name>Nexus Sites</name>
-      <url>dav:http://localhost:8081/nexus/content/sites/site/</url>
+      <url>dav:http://52.14.40.69:8081/nexus/content/sites/site/</url>
     </site>
   </distributionManagement>
   <build>
