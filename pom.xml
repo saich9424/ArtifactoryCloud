@@ -31,21 +31,16 @@
 </dependencies>
 <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <name>Nexus Releases</name>
-      <url>http://52.14.40.69:8081/nexus/service/local/staging/deploy/maven2</url>
+        <id>central</id>
+        <name>ip-172-31-30-76-releases</name>
+        <url>http://52.14.40.69:8081/artifactory/libs-release-local</url>
     </repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <name>Nexus Snapshot</name>
-      <url>http://52.14.40.69:8081/nexus/content/repositories/snapshots</url>
+	<snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-30-76-snapshots</name>
+        <url>http://52.14.40.69:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
-    <site>
-      <id>nexus</id>
-      <name>Nexus Sites</name>
-      <url>dav:http://52.14.40.69:8081/nexus/content/sites/site/</url>
-    </site>
-  </distributionManagement>
+</distributionManagement>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
